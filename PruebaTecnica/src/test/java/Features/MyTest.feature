@@ -1,8 +1,11 @@
+
+@Feature
 Feature: Reset functionality on login page of Application
 
   Background: Open the Firefox and launch the application
     Given Open the Firefox and launch the application
 
+    @ValidCredentials
   Scenario: Book a fligth
 
     When Enter "Portugal" "Lisbon"  and "France" "Paris Beauvais"

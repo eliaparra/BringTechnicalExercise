@@ -6,7 +6,8 @@ import org.testng.annotations.Test;
 
 @Test
 @CucumberOptions(tags = "", features = {"src/test/java/Features"}, glue = {"StepDefinition"},
-        plugin = {})
+        monochrome = true,
+        plugin = {"pretty"})
 
 public class Runner extends AbstractTestNGCucumberTests {
 
